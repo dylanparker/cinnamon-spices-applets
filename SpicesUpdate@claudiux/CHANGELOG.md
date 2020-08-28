@@ -1,3 +1,42 @@
+### v6.0.2~20200811
+  * Remove all notifications when reloading this applet.
+  * Menu shows the "reload this applet" option when a RELOAD file exists at the root of this applet.
+
+### v6.0.1~20200806
+
+"Weight" reduction of this applet: the `Symbola` font is no longer included in its package; it was only used for Arch and the `install_symbola_on_Arch.sh` script was modified to download it if needed.
+
+### v6.0.0~20200729
+
+Many improvements, only for Cinnamon 4.2 and following.
+
+  * Spices Update automatically adapts the verification or not of each type of Spices (for example: it does not check the themes if no theme is installed; it checks them as soon as at least one theme is installed). However, the user is always free to decide, in settings, what should be done.
+
+  * Checking for new Spices is now disabled by default.
+
+  * New option in General Settings: "Show the 'Update All' button in notifications" (with buttons). For example, clicking on this button in a notification for available Themes updates:
+    1. opens the Download tab of System Settings about Themes,
+    2. refreshes the cache about Themes,
+    3. downloads and install all latest updates for your Themes.
+    4. When all updates are made, just close yourself this System Settings window.
+
+  * New button 'Forget' in notifications about new Spices.
+  * The applet icon now rotates during the entire refresh process.
+  * Displays a notification asking the user to check the applet settings, if this is the first installation of this version of Spices Updates. This notification only appears once.
+  * Better management of notifications. Spices Update does not use notify-send anymore.
+  * Help button (in menu) shows in the browser by default an approximate translation of the web page: https://cinnamon-spices.linuxmint.com/applets/view/309
+
+### v5.4.2~20200615
+  * Bug fixes
+
+### v5.4.1~20200613
+  * Code cleanup
+  * Now displays the badge showing the number of updates only after all checks have been completed.
+
+### v5.4.0~20200608
+  * Now compatible with Cinnamon 4.6.
+  * Fixes #2927, #2972, #3020.
+
 ### v5.3.0~20200209
   * Cinnamon 4.2 & 4.4: Direct access from the Spices Update menu to each tab of settings (General, Applets, Desklets, Extensions, Themes) via the Configure sub menu.
 

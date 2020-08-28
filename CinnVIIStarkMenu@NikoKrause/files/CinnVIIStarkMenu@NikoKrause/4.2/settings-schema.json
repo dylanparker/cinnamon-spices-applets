@@ -41,7 +41,7 @@
         "menu-icons" : {
             "type" : "section",
             "title" : "Icons and Labels",
-            "keys" : ["show-category-icons", "show-application-icons", "show-context-menu-icons", "show-favorite-icons", "favorite-button-size", "all-programs-label", "favorites-label"]
+            "keys" : ["show-category-icons", "show-application-icons", "show-favorite-icons", "favorite-button-size", "all-programs-label", "favorites-label"]
         },
         "menu-behave" : {
             "type" : "section",
@@ -56,7 +56,7 @@
         "quitmenu-layout" : {
             "type" : "section",
             "title" : "Quit Menu Layout",
-            "keys" : ["show-shutdown-menu", "shutdown-menu-layout", "shutdown-label"]
+            "keys" : ["show-shutdown-menu", "shutdown-menu-reverse-order", "shutdown-menu-layout", "shutdown-label"]
         },
         "quicklauncher-separator-layout" : {
             "type" : "section",
@@ -188,12 +188,6 @@
     "description" : "Show application icons",
     "tooltip" : "Choose whether or not to show icons on applications."
  },
- "show-context-menu-icons" : {
-    "type" : "switch",
-    "default" : true,
-    "description" : "Show context menu icons",
-    "tooltip" : "Choose whether or not to show icons on context menus."
- },
  "show-favorite-icons" : {
     "type" : "switch",
     "default" : true,
@@ -247,6 +241,14 @@
     "default" : true,
     "description": "Show quit buttons",
     "tooltip": "Choose whether or not to show the quit buttons."
+ },
+ "shutdown-menu-reverse-order" : {
+    "type" : "switch",
+    "default" : true,
+    "description": "Reverse quit button order",
+    "tooltip": "Choose whether to display the 'Quit' button first or last. (Has no effect on 'DropDown' layout.)",
+    "dependency" : "show-shutdown-menu",
+    "indent" : true
  },
  "shutdown-menu-layout" : {
     "type": "combobox",
